@@ -1,4 +1,4 @@
-# ECE143_project
+# ECE143_project Group4 Analysis of Google Play Store Apps Data
 
 ## Current Progress
 - 1. Data processing

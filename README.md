@@ -2,7 +2,9 @@
 Analysis of Google Play Store Apps Data
 ## Members
 Mahima Rathore mrathore@eng.ucsd.edu
+
 Amol Sakhale amolsakhale99@gmail.com
+
 Zichao Li  zil023@ucsd.edu
 ## Problem
 The Play Store apps data has enormous potential to drive app-making businesses to success. Actionable insights can be drawn for developers to work on and capture the Android market! In this project, we will perform a rigorous analysis of the Google App store market data & dive deep into aspects that can help developers make their apps successful.

@@ -3,7 +3,7 @@ Analysis of Google Play Store Apps Data
 ## Members
 Mahima Rathore mrathore@eng.ucsd.edu
 
-Amol Sakhale amolsakhale99@gmail.com
+Amol Sakhale asakhale@eng.ucsd.edu
 
 Zichao Li  zil023@ucsd.edu
 

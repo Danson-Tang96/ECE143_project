@@ -25,20 +25,32 @@ We would also like to do sentiment analysis of the reviews by finding the most c
 ## Libraries Used
 The user should import all the libararies listed below in order to run the project. You can see the libraries used in requirements.txt
 
+## File structure
+The src folder contains all python scripts. The data folder contains all the data needed for the processing.
+```
+Data Cleaning and show the data
+-> location src/eda.py
+-> description Functions in this file can clean the invalid value and show details of the data set, such as category, and number of data.
+```
+
+```
+Get the relationships between different parameter
+
+-> location src/installs.py
+-> description Show the relationships between size, rating and installs.
+
+-> location src/pricing.py
+-> description Show the relationships between category, size, rating and prices.
+
+-> location src/rating.py
+-> description Show the rating across various categories.
+
+-> location src/read_and_show.py
+-> description This function will read the data from the csv file and create and return a dataframe from the data.
+
+-> location src/reviews.py
+-> description This function will give lineplot between the number of installs and number of reviews.
+
+
 ## Conclusions
 We get the relationship between rating, sizes, price and installs and reviews. From the data visulizatoin results, we can see that 
-
-## Usage of repository
-### Data 
-The data folder contains two .csv files which have google play store apps and reviews data. 
-We got this data from kaggle. 
-
-### Install dependencies
-Install all required packages given in requirement.txt
-
-### Jupyter Notebook
-For generating all the plots, run the jupyter notebook. 
-We have used multiple functions to generate different plots.
-These functions are written in respective .py files in pyfiles folder. 
-
-

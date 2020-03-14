@@ -3,23 +3,39 @@ import numpy as np
 from matplotlib import pyplot as plt
 import seaborn as sns
 
-def show1(df):
+def show_priceVsrating(df):
+    """
+    This function will give the jointplot of price and rating
+    :param df: Dataframe
+    :return: None
+    """
+    assert isinstance(df, pd.DataFrame)
+
     paid_apps = df[df.Price>0]
     plt.figure(figsize = (10,10))
     p = sns.jointplot( "Price", "Rating", paid_apps,size = 8, color = 'red')
 
-def show2(df):
-    paid_apps = df[df.Price>0]
 
-    p = sns.jointplot( "Price", "Rating", paid_apps)
+def show_priceVssize(df):
+    """
+    This function will give the jointplot of price and size
+    :param df: Dataframe
+    :return: None
+    """
+    assert isinstance(df, pd.DataFrame)
 
-def show3(df):
     paid_apps = df[df.Price>0]
     p = sns.jointplot( "Price", "Size", paid_apps, size = 8)
 
-def show4(df):
-    subset_df = df[df.Category.isin(['GAME', 'FAMILY', 'PHOTOGRAPHY', 'MEDICAL', 'TOOLS', 'FINANCE',
-                                 'LIFESTYLE','BUSINESS'])]
+def show_priceVscategory(df):
+    """
+    This function will give the plot of price for different app categories
+    :param df: Dataframe
+    :return: None
+    """
+    assert isinstance(df, pd.DataFrame)
+
+    subset_df = df[df.Category.isin(['GAME', 'FAMILY', 'PHOTOGRAPHY', 'MEDICAL', 'TOOLS', 'FINANCE', 'LIFESTYLE','BUSINESS'])]
     sns.set_style('darkgrid')
     fig, ax = plt.subplots()
     fig.set_size_inches(15, 8)
@@ -28,16 +44,29 @@ def show4(df):
     plt.ylabel('Category',size = 15)
     title = ax.set_title('App Pricing Trend across Categories',size = 20)
 
-def show5(df):
-    subset_df = df[df.Category.isin(['GAME', 'FAMILY', 'PHOTOGRAPHY', 'MEDICAL', 'TOOLS', 'FINANCE',
-                                 'LIFESTYLE','BUSINESS'])]
+def show_priceVscategory_filtered(df):
+    """
+    This function will give the plot of price for different app categories after filtering junk apps
+    :param df: Dataframe
+    :return: None
+    """
+    assert isinstance(df, pd.DataFrame)
+
+    subset_df = df[df.Category.isin(['GAME', 'FAMILY', 'PHOTOGRAPHY', 'MEDICAL', 'TOOLS', 'FINANCE','LIFESTYLE','BUSINESS'])]
     fig, ax = plt.subplots()
     fig.set_size_inches(15, 8)
     subset_df_price = subset_df[subset_df.Price<100]
     p = sns.stripplot(x="Price", y="Category", data=subset_df_price, jitter=True, linewidth=1, color = 'violet')
     title = ax.set_title('App pricing trend across categories - after filtering for junk apps')
 
-def show6(df):
+def show_freeVspaid_distri_categories(df):
+    """
+    This function will give the piechart showing free vs paid apps in different app categories
+    :param df: Dataframe
+    :return: None
+    """
+    assert isinstance(df, pd.DataFrame)
+
     new_df = df.groupby(['Category', 'Type']).agg({'App' : 'count'}).reset_index()
     print(new_df)
 

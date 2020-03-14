@@ -22,8 +22,19 @@ After understanding patterns between various features, we would like to analyze 
 We can assume that high ratings, percentage of positive reviews and the number of installs are the factors that define the success of the app. Basically we will analyze various features of the google app store dataset like the reviews, rating, number of installs, price, and category, and find out correlations between them. Some useful correlations and certain assumptions will be set to assess whether the app is successful or not. For example, one criterion could be the minimum number of installs, another could be the minimum rating of the app with a certain number of installs. 
 We would also like to do sentiment analysis of the reviews by finding the most common words for positive, negative and neutral reviews, to get more insights about the app. We would also like to focus on a particular app category like gaming and find out more specific correlations for the app’s success. By analyzing the android app market breakdown we would also want to study the relationship of categories with the app’s success.
 
-## Libraries Used
-The user should import all the libararies listed below in order to run the project. You can see the libraries used in requirements.txt
+## Conclusions
+We found out relations between different features available in the dataset.  We explored the App category feature and found out how it is related to other features like installs, type of app, and price.  We explored number of installs feature and found out very interesting results.  We found of relation between number of installs and rating and got to know how number number of installs is very low if an app has extremely high rating.  We also analyzed price for different categories. We could find that there were quite a few junk apps whose prices were extremely high. 
+
+## Usage of repository
+### Data 
+The data folder contains two .csv files which have google play store apps and reviews data. 
+We got this data from kaggle. 
+
+### Install dependencies
+Install all required packages given in requirement.txt
+
+### Jupyter Notebook
+For generating all the plots, run the jupyter notebook.  We have used multiple functions to generate different plots.  These functions are written in respective .py files in pyfiles folder. 
 
 ## File structure
 The src folder contains all python scripts. The data folder contains all the data needed for the processing.

@@ -27,3 +27,18 @@ The user should import all the libararies listed below in order to run the proje
 
 ## Conclusions
 We get the relationship between rating, sizes, price and installs and reviews. From the data visulizatoin results, we can see that 
+
+## Usage of repository
+# Data 
+The data folder contains two .csv files which have google play store apps and reviews data. 
+We got this data from kaggle. 
+
+# Install dependencies
+Install all required packages given in requirement.txt
+
+# Jupyter Notebook
+For generating all the plots, run the jupyter notebook
+We have used multiple functions to generate different plots.
+These functions are written in respective .py files in pyfiles folder. 
+
+

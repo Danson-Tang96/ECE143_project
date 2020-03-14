@@ -33,7 +33,7 @@ We got this data from kaggle.
 Install all required packages given in requirement.txt
 
 ### Jupyter Notebook
-For generating all the plots, run the jupyter notebook.  We have used multiple functions to generate different plots.  These functions are written in respective .py files in pyfiles folder. 
+For generating all the plots, run the jupyter notebook 143_proj.ipynb.  We have used multiple functions to generate different plots.  These functions are written in respective .py files in pyfiles folder. 
 
 ## File structure
 The src folder contains all python scripts. The data folder contains all the data needed for the processing.

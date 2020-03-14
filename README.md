@@ -37,7 +37,7 @@ We got this data from kaggle.
 Install all required packages given in requirement.txt
 
 ### Jupyter Notebook
-For generating all the plots, run the jupyter notebook
+For generating all the plots, run the jupyter notebook. 
 We have used multiple functions to generate different plots.
 These functions are written in respective .py files in pyfiles folder. 
 
